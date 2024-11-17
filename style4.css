@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 50px;
+    justify-content:space-between;
+    height: 100px;
+    padding: 10px;
+    background-color: lightgray;
+    align-items: center;
+}
+body{
+    position: relative;
+}
+#check{
+    display: none;
+}
+.icon{
+    display: none;
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+#check:checked+nav{
+    display:flex;
+    position: absolute;
+    left: 10px;
+    background-color: aliceblue;
+    flex-direction: column;
+    top:80px;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    width: 100%;
+}
+
+@media (max-width: 600px){
+    .icon{
+        display:inline-block;
+    }
+    .nav{
+        display: none;
+    }
+}
